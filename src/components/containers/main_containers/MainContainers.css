@@ -1,0 +1,74 @@
+/*Sobrescrita do CSS padrão do Material*/
+
+.esquerdaToolbar {
+  display: flex;
+  min-width: 50%;
+  justify-content: flex-start;
+}
+
+.direitaToolbar {
+  display: flex;
+  min-width: 50%;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.direitaToolbar > button {
+  max-height: 65px;
+}
+
+.sidebarHeader {
+  min-height: 65px !important;
+}
+
+.MuiDrawer-paper {
+  background-color: var(--dark) !important;
+  overflow: hidden;
+}
+
+.MuiPaper-elevation4 {
+  box-shadow: unset !important;
+}
+
+.MuiTypography-body1 {
+  font-size: 1em !important;
+}
+
+.MuiDrawer-paper .MuiSvgIcon-root {
+  font-size: 1.5em;
+  color: var(--cinza);
+}
+
+.MuiList-padding {
+  padding: 0px !important;
+}
+
+.makeStyles-menuButton-4 {
+  margin: unset;
+}
+
+.MuiToolbar-gutters {
+  height: 65px;
+}
+
+.MuiAppBar-root {
+  z-index: 1000 !important;
+}
+
+.navbar {
+  padding-right: 0px !important;
+}
+
+.conteudo {
+  padding: 25px;
+}
+
+@media (max-width: 600px) {
+  .conteudo {
+    padding: 20px 5px;
+  }
+
+  .menuButtonToolbar {
+    margin-left: 0px;
+  }
+}

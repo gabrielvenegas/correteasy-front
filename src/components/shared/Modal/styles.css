@@ -1,0 +1,28 @@
+.modalPaper {
+  max-height: 95vh;
+  max-width: 90vw;
+  padding: 25px;
+  overflow: auto;
+  position: fixed;
+}
+
+.buttonCloseModal {
+  position: absolute !important;
+  right: 5px;
+  top: 5px;
+}
+
+@media (max-width: 960px) {
+  .buttonCloseModal {
+    right: 0;
+    top: 0;
+  }
+
+  .modalPaper {
+    max-height: 100vh !important;
+    max-width: 100vw !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    border-radius: 0px !important;
+  }
+}

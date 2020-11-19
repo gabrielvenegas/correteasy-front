@@ -1,0 +1,52 @@
+.tituloGrupoSideBar {
+  text-align: left;
+  min-height: 40px;
+  padding: 10px;
+  background-color: #1d242f;
+  color: var(--cinza);
+  white-space: nowrap;
+}
+
+.tituloGrupoSideBar p {
+  font-size: 0.8rem !important;
+}
+
+.buttonSideBar {
+  color: var(--cinza) !important;
+  background-color: var(--darkButton) !important;
+  max-height: 45px;
+  white-space: nowrap;
+}
+
+.buttonSideBar:hover {
+  background-color: var(--darkAtivo) !important;
+}
+
+.expansionPanelSummaryMenuLateral {
+  display: inline-flex !important;
+  padding: 0px 16px !important;
+  min-width: 100%;
+}
+
+.expansionPanelSummaryMenuLateral:hover {
+  background-color: var(--darkAtivo) !important;
+}
+
+.expansionPanelMenuLateral {
+  color: var(--cinza) !important;
+  background-color: var(--darkButton) !important;
+}
+
+.MuiExpansionPanel-root.Mui-expanded {
+  margin: unset !important;
+}
+
+.MuiExpansionPanelDetails-root {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px !important;
+}
+
+.MuiExpansionPanel-root:before {
+  display: none !important;
+}

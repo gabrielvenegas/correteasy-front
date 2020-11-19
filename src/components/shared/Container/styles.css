@@ -1,0 +1,19 @@
+.paper_content {
+  min-width: 100%;
+  min-height: 43em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06) !important;
+  margin-top: 35px;
+  overflow-x: none;
+  width: 1px;
+}
+
+@media(max-width: 600px){
+  .paper_content {
+    min-height: 64em;
+  }
+}
+
+.div_header_container {
+  /*padding: 20px 12px;*/
+  padding: 30px 25px;
+}

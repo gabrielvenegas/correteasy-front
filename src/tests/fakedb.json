@@ -1,0 +1,206 @@
+{
+  "orders": [
+    {
+      "label": "ANYMARKET",
+      "orders": [
+        {
+          "order_id": "12345",
+          "order_mkt_id": "2267047076",
+          "order_am_id": "AM0012345",
+          "order_ap_id": "AP0012345",
+          "state_reserva": "FINISHED",
+          "state_mkt": "SENT",
+          "divergent": true,
+          "order_items": [
+            {
+              "id": "01",
+              "name": "Camiseta X",
+              "status_reserva": "SENT",
+              "status_mkt": "SENT",
+              "divergent": false
+            },
+            {
+              "id": "02",
+              "name": "Camiseta Y",
+              "status_reserva": "FINISHED",
+              "status_mkt": "SENT",
+              "divergent": true
+            }
+          ]
+        },
+        {
+          "order_id": "12345",
+          "order_mkt_id": "2267047076",
+          "order_am_id": "AM0012345",
+          "order_ap_id": "AP0012345",
+          "state_reserva": "FINISHED",
+          "state_mkt": "SENT",
+          "divergent": true,
+          "order_items": [
+            {
+              "id": "01",
+              "name": "Camiseta X",
+              "status_reserva": "SENT",
+              "status_mkt": "SENT",
+              "divergent": false
+            },
+            {
+              "id": "02",
+              "name": "Camiseta Y",
+              "status_reserva": "FINISHED",
+              "status_mkt": "SENT",
+              "divergent": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "SKYHUB",
+      "orders": [
+        {
+          "order_id": "12345",
+          "order_mkt_id": "2267047076",
+          "order_am_id": "AM0012345",
+          "order_ap_id": "AP0012345",
+          "state_reserva": "FINISHED",
+          "state_mkt": "FINISHED",
+          "divergent": false,
+          "order_items": [
+            {
+              "id": "01",
+              "status_reserva": "SENT",
+              "status_mkt": "SENT"
+            },
+            {
+              "id": "02",
+              "status_reserva": "FINISHED",
+              "status_mkt": "SENT"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "FARFETCH",
+      "orders": [
+        {
+          "order_id": "12345",
+          "order_mkt_id": "2267047076",
+          "order_am_id": "AM0012345",
+          "order_ap_id": "AP0012345",
+          "state_reserva": "FINISHED",
+          "state_mkt": "SENT",
+          "divergent": true,
+          "order_items": [
+            {
+              "id": "01",
+              "status_reserva": "SENT",
+              "status_mkt": "SENT"
+            },
+            {
+              "id": "02",
+              "status_reserva": "FINISHED",
+              "status_mkt": "SENT"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stock": [
+    {
+      "label": "ANYMARKET",
+      "products": [
+        {
+          "id": "0000115",
+          "stock": 20,
+          "stockReserva": 20,
+          "divergent": false
+        }
+      ]
+    },
+    {
+      "label": "SKYHUB",
+      "products": [
+        {
+          "id": "0000113",
+          "stock": 20,
+          "stockReserva": 50,
+          "divergent": true
+        },
+        {
+          "id": "0000111",
+          "stock": 30,
+          "stockReserva": 80,
+          "divergent": true
+        }
+      ]
+    },
+    {
+      "label": "FARFETCH",
+      "products": [
+        {
+          "id": "0001567",
+          "stock": 60,
+          "stockReserva": 500,
+          "divergent": true
+        }
+      ]
+    }
+  ],
+  "stock2": [
+    {
+      "product": "0000115",
+      "stockReserva": 50,
+      "stockAnyMarket": 20,
+      "stockFarfetch": 30
+    }
+  ],
+  "products": [
+    {
+      "active": true,
+      "id": "0000115",
+      "skus": [
+        {
+          "product": "0000115",
+          "color": "040",
+          "active": false,
+          "message": "O sku não está ativo",
+          "verifications": [
+            {
+              "descriptiveTitle": "Possui foto?",
+              "title": "hasPhoto",
+              "value": true,
+              "message": "Imagem do sku não sincronizada"
+            },
+            {
+              "descriptiveTitle": "Enviado ao Mktplace?",
+              "title": "sendMktPlace",
+              "value": false,
+              "message": "O sku não está ativo para MarketPlace"
+            },
+            {
+              "descriptiveTitle": "Enviado ao Skyhub?",
+              "title": "sendSkyhub",
+              "value": true,
+              "message": "O sku não está ativo para Skyhub"
+            },
+            {
+              "descriptiveTitle": "Enviado ao Farfetch?",
+              "title": "sendFarfetch",
+              "value": true,
+              "message": "O sku não está ativo para Farfetch"
+            },
+            {
+              "descriptiveTitle": "Enviado ao Anymarket?",
+              "title": "sendAnymarket",
+              "value": false,
+              "message": "O sku não está ativo para Anymarket"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

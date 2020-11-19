@@ -1,0 +1,72 @@
+.MuiTableSortLabel-root {
+  color: rgba(0, 0, 0, 0.56) !important;
+}
+
+.MuiTablePagination-toolbar {
+  color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.MuiTablePagination-root {
+  overflow: hidden !important;
+}
+
+.MuiTableCell-root {
+  padding: 5px 15px !important;
+}
+
+.MuiIconButton-root {
+  padding: 5px !important;
+}
+
+.divCellAcoes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.divCellStatus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cellStatusPending {
+  background-color: var(--tavel);
+}
+
+.cellStatusProcessing {
+  background-color: var(--blue);
+}
+
+.cellStatusAtivo {
+  background-color: var(--statusAtivo);
+}
+
+.cellStatusInativo {
+  background-color: var(--statusInativo);
+}
+
+.iconRedondoStatus {
+  width: 8px;
+  height: 8px;
+  border-radius: 8px; /*(padrão)*/
+  -moz-border-radius: 8px; /*(navegadores Flock e Firefox)*/
+  -webkit-border-radius: 8px; /*(navegadores Chrome e Safari)*/
+  margin-right: 15px;
+}
+
+.iconButtonToolbarTable {
+  padding: 0px 15px;
+}
+
+.MuiTablePagination-actions {
+  flex-shrink: 0 !important;
+  margin-left: 25px !important;
+  /* display: grid !important; */
+  overflow: unset !important;
+  justify-content: center;
+}
+
+.MuiToolbar-root{
+  overflow-x: auto;
+}
