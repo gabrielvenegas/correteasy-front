@@ -3,9 +3,7 @@
 import React, { Suspense } from 'react';
 import { Switch } from 'react-router-dom';
 import ProgressRouter from '../components/shared/ProgressRouter';
-import Stock from '../pages/stock/Stock';
-import CheckProduct from '../pages/CheckProduct/CheckProduct';
-import Orders from '../pages/Orders/Orders';
+import Users from '../pages/Users/Users';
 
 
 type routes = {
@@ -17,29 +15,18 @@ type routes = {
 
 const routesData: routes[] = [
   {
-    title: 'Estoque',
+    title: 'Usuário',
     path: '/',
     exact: true,
-    component: Stock,
+    component: Users,
   },
+  
   {
-    title: 'Estoque',
-    path: '/stock',
+    title: 'Usuário',
+    path: '/usuario',
     exact: true,
-    component: Stock,
+    component: Users,
   },
-  {
-    title: 'Checklist de Produto',
-    path: '/check-product',
-    exact: true,
-    component: CheckProduct,
-  },
-  {
-    title: 'Pedidos',
-    path: '/orders',
-    exact: true,
-    component: Orders
-  }
 ];
 
 const Routes = (): JSX.Element => (

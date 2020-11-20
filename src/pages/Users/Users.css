@@ -1,0 +1,8 @@
+.class-root {
+  margin: 10px;
+  width: 200px;
+}
+p {
+  padding-left: inherit;
+  font-size: 15px;
+}
