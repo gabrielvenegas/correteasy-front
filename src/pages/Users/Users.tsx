@@ -11,15 +11,13 @@ import {
   Typography,
   Divider,
   Radio,
-  Avatar,
   Button,
-  Icon,
 } from '@material-ui/core';
 import React, { useState } from 'react';
 import './Users.css';
 import InputMask from 'react-input-mask';
 import axios from 'axios';
-import { DropzoneArea, DropzoneDialog } from 'material-ui-dropzone';
+import { DropzoneDialog } from 'material-ui-dropzone';
 import SaveIcon from '@material-ui/icons/Save';
 //import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 
@@ -71,7 +69,7 @@ const Users = () => {
   const [open, setOpen] = useState(false);
   const buscaCep = async (e: any) => {
     const cep = e.target.value;
-    const { data, status } = await axios.get(
+    const { data } = await axios.get(
       `https://brasilapi.com.br/api/cep/v1/${cep}`,
     );
 
@@ -169,7 +167,7 @@ const Users = () => {
             />
           </Grid>
           <Grid item xs={3}>
-            <TextField id="outlined-basic" label="Número" variant="outlined" />
+            <TextField id="outlined-basic" label="Numero" variant="outlined" />
           </Grid>
           <Grid item xs={3}>
             <TextField

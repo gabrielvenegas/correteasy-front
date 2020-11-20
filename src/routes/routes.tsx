@@ -3,8 +3,8 @@
 import React, { Suspense } from 'react';
 import { Switch } from 'react-router-dom';
 import ProgressRouter from '../components/shared/ProgressRouter';
+import UserList from '../pages/UserList/UserList';
 import Users from '../pages/Users/Users';
-
 
 type routes = {
   title: string;
@@ -20,12 +20,18 @@ const routesData: routes[] = [
     exact: true,
     component: Users,
   },
-  
+
   {
     title: 'Usuário',
     path: '/usuario',
     exact: true,
     component: Users,
+  },
+  {
+    title: 'Listagem de usuário',
+    path: '/usuario/listagem',
+    exact: true,
+    component: UserList,
   },
 ];
 
